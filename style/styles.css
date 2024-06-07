@@ -18,12 +18,13 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  position: relative;
 }
 footer {
   background-color: #171717;
   color: #F9B025;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 10px;
 }
@@ -39,6 +40,8 @@ footer {
   justify-content: space-between;
   width: 30%;
   margin-right: 100px;
+  position: absolute;
+  right: 10px;
 }
 a{
   text-decoration: none;
@@ -66,7 +69,7 @@ a{
 
 h1 {
   margin: 0;
-  margin-right: 10px;
+  text-align: center;
 }
 
 main {
@@ -95,6 +98,7 @@ main {
 
 .carousel-item img {
   width: 100%;
+  cursor: pointer;
 }
 
 .carousel-control {
