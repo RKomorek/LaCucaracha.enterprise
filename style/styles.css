@@ -1,8 +1,9 @@
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: #A9A9A9;
+  background-color: #a9a9a9;
 }
 
 .container {
@@ -13,7 +14,7 @@ body, html {
 
 header {
   background-color: #171717;
-  color: #F9B025;
+  color: #f9b025;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,11 +23,14 @@ header {
 }
 footer {
   background-color: #171717;
-  color: #F9B025;
+  color: #f9b025;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  position: fixed;
+  bottom: 0;
+  min-width: 100%;
 }
 
 .header-left {
@@ -43,7 +47,7 @@ footer {
   position: absolute;
   right: 10px;
 }
-a{
+a {
   text-decoration: none;
 }
 .header-right a {
@@ -52,7 +56,7 @@ a{
 }
 
 .header-right a:visited {
-  color: #F9B025;
+  color: #f9b025;
 }
 
 .header-right a:focus {
@@ -71,6 +75,13 @@ h1 {
   margin: 0;
   text-align: center;
 }
+h3 {
+  margin: 0;
+  margin-bottom: 25px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
 
 main {
   flex: 1;
@@ -83,6 +94,9 @@ main {
   max-width: 600px;
   margin: auto;
   overflow: hidden;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
 }
 
 .carousel-inner {
@@ -124,4 +138,66 @@ main {
   width: 100%;
   height: 450px;
   margin-block: 20px;
+  margin-bottom: 60px;
+}
+
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1600px;
+  max-height: auto;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.menu-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.menu-item p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.menu-item h2 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  color: #f9b025;
+  background-color: #000000;
+  border-radius: 8px;
+  padding: 5px;
+  max-width: max-content;
+}
+
+.menu-item button {
+  background-color: forestgreen;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+  max-width: fit-content;
+  max-height: 38;
+  float: right;
+}
+
+.menu-item button:hover {
+  background-color: green;
 }
