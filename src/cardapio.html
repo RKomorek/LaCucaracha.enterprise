@@ -40,7 +40,11 @@
                 mussarela<br />•Picles de maxixe<br />•Alface<br />•Tomate<br />•Cebola
               </p>
             </div>
-            <div></div>
+            <div class="quantity-container">
+              <button class="decrement">-</button>
+              <span class="quantity">0</span>
+              <button class="increment">+</button>
+            </div>
             <div><button>Fazer Pedido</button></div>
           </div>
           <div class="menu-item">
@@ -52,7 +56,11 @@
                 cheddar<br />•Bacon defumado<br />•Alface<br />•Tomate
               </p>
             </div>
-            <div></div>
+            <div class="quantity-container">
+              <button class="decrement">-</button>
+              <span class="quantity">0</span>
+              <button class="increment">+</button>
+            </div>
             <div><button>Fazer Pedido</button></div>
           </div>
           <div class="menu-item">
@@ -66,7 +74,11 @@
                 75g<br />•Queijo mussarela<br />•Pepino<br />•Alface<br />•Tomate
               </p>
             </div>
-            <div></div>
+            <div class="quantity-container">
+              <button class="decrement">-</button>
+              <span class="quantity">0</span>
+              <button class="increment">+</button>
+            </div>
             <div><button>Fazer Pedido</button></div>
           </div>
           <div class="menu-item">
@@ -77,7 +89,11 @@
                 •Massa especial<br />•Recheio de Filé de sassami desfiado<br />•Catupiry
               </p>
             </div>
-            <div></div>
+            <div class="quantity-container">
+              <button class="decrement">-</button>
+              <span class="quantity">0</span>
+              <button class="increment">+</button>
+            </div>
             <div><button>Fazer Pedido</button></div>
           </div>
         </div>
@@ -97,7 +113,11 @@
                 qualidade
               </p>
             </div>
-            <div></div>
+            <div class="quantity-container">
+              <button class="decrement">-</button>
+              <span class="quantity">0</span>
+              <button class="increment">+</button>
+            </div>
             <div><button>Fazer Pedido</button></div>
           </div>
           <div class="menu-item">
@@ -112,7 +132,11 @@
                 qualidade
               </p>
             </div>
-            <div></div>
+            <div class="quantity-container">
+              <button class="decrement">-</button>
+              <span class="quantity">0</span>
+              <button class="increment">+</button>
+            </div>
             <div><button>Fazer Pedido</button></div>
           </div>
           <div class="menu-item">
@@ -124,7 +148,11 @@
               </h4>
               <p>•Dois X-Picanha maravilhosos</p>
             </div>
-            <div></div>
+            <div class="quantity-container">
+              <button class="decrement">-</button>
+              <span class="quantity">0</span>
+              <button class="increment">+</button>
+            </div>
             <div><button>Fazer Pedido</button></div>
           </div>
           <div class="menu-item">
@@ -136,10 +164,25 @@
               </h4>
               <p>•Três X-Picanha perfeitos</p>
             </div>
-            <div></div>
+            <div class="quantity-container">
+              <button class="decrement">-</button>
+              <span class="quantity">0</span>
+              <button class="increment">+</button>
+            </div>
             <div><button>Fazer Pedido</button></div>
           </div>
         </div>
+
+        <div id="orderModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Confirmação de Pedido</h2>
+            <p id="orderSummary"></p>
+            <p id="orderTotal"></p>
+            <button id="confirmOrder">Confirmar Pedido</button>
+          </div>
+        </div>
+
       </main>
       <footer>
         <div style="font-size: small">Komorek`s Production</div>
